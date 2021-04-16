@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #161623;
+}
+
+.content{
+    position: relative;
+}
+
+.content h2{
+    position: absolute;
+    font-size: 10rem;
+    transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px cyan;
+}
+
+.content h2:nth-child(2){
+    color: cyan;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%, 100%{
+        clip-path: polygon(0% 58%, 22% 55%, 39% 59%, 58% 53%, 71% 48%, 88% 41%, 100% 51%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0 30%, 18% 35%, 38% 23%, 55% 34%, 66% 49%, 81% 64%, 100% 53%, 100% 100%, 1% 100%);
+    }
+}
