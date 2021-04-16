@@ -18,7 +18,7 @@ body{
 
 .content h2{
     position: absolute;
-    font-size: 10rem;
+    font-size: 8rem;
     transform: translate(-50%, -50%);
 }
 
